@@ -1,0 +1,11 @@
+docker build -t test .
+# which is to launch docker called 'test'. (-t test do the job)
+
+Docker イメージを作る
+docker build -t second-brain .
+Python スクリプトを実行
+docker run --rm -v $(pwd):/data second-brain python convert_pdf.py /data/sample.pdf
+FastAPI を起動
+docker run -p 8000:8000 second-brain
+起動確認 (API)
+http://localhost:8000/docs をブラウザで開く

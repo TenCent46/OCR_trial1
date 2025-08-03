@@ -1,0 +1,7 @@
+services:
+  ocr:
+    build: .
+    volumes:
+      - ./data:/app/data
+   #command: python ocr_main.py sample.pdf
+  

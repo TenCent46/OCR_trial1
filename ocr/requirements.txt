@@ -1,0 +1,4 @@
+paddleocr==2.7.1.3
+pdf2image==1.17.0
+pillow>=10.0
+watchdog   # フォルダ監視が必要になったら
